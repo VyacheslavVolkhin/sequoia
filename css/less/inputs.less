@@ -1,0 +1,121 @@
+/* ----------------------------------- *\
+			inputs elements styles
+\* ----------------------------------- */
+.btn-action-ico {
+    min-width: 0;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 40px;height: 40px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    transition: all ease 0.2s;
+    flex-shrink: 0;
+    &:not(.btn) {
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+    &.btn {
+        min-width: 0;
+        min-height: 0;
+        padding: 0;
+        display: block;
+    }
+    &:before, &:after, [class*="icon-"], img, svg {
+        display: block;
+        position: absolute;
+        top: 0;bottom: 0;left: 0;right: 0;
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        transition: all ease 0.2s;
+    }
+    img, svg {
+        max-width: 24px;
+        max-height: 24px;
+    }
+    &:before, &:after {
+        content: "";
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px auto;
+    }
+    &:hover {
+        text-decoration: none;
+        &:not(.btn) {
+            background: none;
+            box-shadow: none;
+        }
+    }
+    &.ico-arrow {
+        z-index: 20;
+        cursor: pointer;
+        &:before, &:after {
+            background-image: url(../img/icons/arrow-slider.svg);
+            background-size: 100% auto;
+        }
+        &:after {
+            .t-rotate(180deg);
+            background-image: url(../img/icons/arrow-slider-h.svg);
+            opacity: 0;
+        }
+        &:hover {
+            &:before {
+                opacity: 0;
+            }
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+    &.ico-arrow-prev {
+        &:before {
+            .t-rotate(180deg);
+        }
+        &:after {
+            .t-rotate(0deg);
+        }
+    }
+    &.ico-close {
+        width: 32px;
+        height: 32px;
+        background: rgba(255, 255, 255, 0.45);
+        &:hover {
+            background: rgba(255, 255, 255, 0.75);
+        }
+        &:after, &:before {
+            width: 18px;
+            height: 2px;
+            border-radius: 1px;
+            background-color: #087A82;
+            top: 50%;
+            left: 50%;
+            bottom: auto;
+            right: auto;
+            margin: -1px 0 0 -9px;
+            .t-rotate(45deg);
+        }
+        &:before {
+            .t-rotate(-45deg);
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 919px) {
+}
+@media (max-width: 767px) {
+}
+@media (min-width: 920px) {
+}
+@media (min-width: 1400px) {
+}

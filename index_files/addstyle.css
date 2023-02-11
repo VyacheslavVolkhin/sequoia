@@ -1,0 +1,58 @@
+#contacts__form input.error {
+	border: 1px solid red;
+}
+.subscribe_msq {
+	text-align: center;
+}
+.subscribe_msq p {
+	color: red;
+	margin-bottom: 7px;
+}
+.ymaps-layers-pane {
+	filter: grayscale(1);
+	-ms-filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+}
+.contacts__map ymaps[class$="ground-pane"] {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+.contacts__map ymaps[class$="copyrights-pane"] {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+.contacts__map ymaps[class$="controls-pane"] {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+.news__col {
+	height: auto;
+}
+.news__col:last-child{
+	align-items: flex-start;
+}
+#sendexForm {
+	text-align: center;
+	color: #fff;
+}
+.message_sub h4 {
+	font-family: 'Montserrat', sans-serif;
+	color: #090E0D;
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+.message_sub p {
+	font-family: 'Montserrat', sans-serif;
+	color: #090E0D;
+	font-size: 16px;
+	margin-bottom: 10px;
+	line-height: normal;
+}
+@media (max-width: 768px) {
+	.project-one__col.project-one__col_top {
+		    margin-top: 15px;
+	}
+}
