@@ -75,6 +75,38 @@ $(document).ready(function(){
             ]
         });
     }
+
+
+    //section-srt-slider
+    if (!!$('.section-srt-slider').offset()) {
+        $('.section-srt-slider .slider').slick({
+            dots: false,
+            slidesToShow: 5,
+            variableWidth: false,
+            infinite: true,
+            adaptiveHeight: false,
+            rows: 1,
+            swipeToSlide: true,
+            prevArrow: '<span class="btn-action-ico ico-arrow ico-arrow-prev"></span>',
+            nextArrow: '<span class="btn-action-ico ico-arrow ico-arrow-next"></span>',
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 920,
+                    settings: {
+                        variableWidth: true,
+                        slidesToShow: 1,
+                    }
+                },
+            ]
+        });
+    }
+    
     
 });
 
